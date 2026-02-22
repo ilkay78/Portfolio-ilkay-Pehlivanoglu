@@ -1,0 +1,30 @@
+body{
+    background-color: #ff930f;
+}
+#container{
+background:linear-gradient(#07c8f9,#32c4c0) ;
+width: 95%;
+height: 100vh;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#counter{
+    background: #f3f98a;
+    border-radius: 5px;
+    box-shadow: 10px 5px 5px 10px;
+    margin: auto;
+    padding: 10px;
+    width: 600px;
+    height: 350px;
+    text-align: center;
+font-size: 2rem;
+}
+#count{
+    font-size: 3rem;
+}
+button{
+    width:40%;
+    padding: 5px;
+}

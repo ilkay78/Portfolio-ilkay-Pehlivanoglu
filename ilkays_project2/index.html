@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>CURRENCY</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="currency.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="main">
+        <div class="header-warpper">
+          <h4>CURRENCY APP</h4>
+        </div>
+        <div class="content-wrapper">
+          <input id="amount" type="number" placeholder="Betrag" />
+          <select id="firstCurrencyOption">
+            <option selected>USD</option>
+            <option>EUR</option>
+            <option>JPY</option>
+            <option>TRY</option>
+            <option>CHF</option>
+            <option>AUD</option>
+            <option>GBP</option>
+            <option>CAD</option>
+            <option>RUB</option>
+            <option>NZD</option>
+          </select>
+          <i class="fa-solid fa-arrow-right"></i>
+          <select id="secondCurrencyOption">
+            <option>USD</option>
+            <option selected>EUR</option>
+            <option>JPY</option>
+            <option>TRY</option>
+            <option>CHF</option>
+            <option>AUD</option>
+            <option>GBP</option>
+            <option>CAD</option>
+            <option>RUB</option>
+            <option>NZD</option>
+          </select>
+
+          <input id="result" type="number" readonly placeholder="Ergebnis" />
+          <span>Copyright@Ilkay PEHLIVANOGLU </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="currency.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

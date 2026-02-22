@@ -1,0 +1,52 @@
+#container {
+  width: 100%;
+  height: 100vh;
+}
+#form-container {
+  display: flex;
+  justify-content: center;
+}
+input {
+  width: 800px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: goldenrod;
+  border-radius: 14px;
+  box-shadow: 2px 4px 8px grey;
+  text-align: center;
+  font-size: 16pt;
+  margin: 20px 0px;
+}
+button {
+  width: 395px;
+  height: 40px;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 2px 4px 6px grey;
+  font-size: 16pt;
+}
+#search-button {
+  background-color: green;
+  color: white;
+}
+#clear-button {
+  background-color: maroon;
+  color: white;
+}
+#img-container{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+   margin: 10px;
+}
+.card
+{
+    margin: 20px;
+    border: 10px solid grey;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 13px 15px 8px grey;
+}
+

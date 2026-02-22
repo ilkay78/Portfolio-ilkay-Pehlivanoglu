@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question Card</title>
+    <link rel="stylesheet" href="card.css" />
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <h1>Question Card</h1>
+        <div class="header-button">
+          <button class="del-card">DEL CARDS</button>
+          <button class="add-card">ADD CARD</button>
+        </div>
+      </div>
+    </header>
+    <main>
+
+        <section>
+          <div class="container-section">
+            <div class="container-textarea">
+              <div>
+                <label for="question">Question</label><br>
+                <textarea id="question"></textarea>
+              </div>
+              <div>
+                <label for="answer">Answer</label><br>
+                <textarea id="answer"></textarea>
+              </div>
+            </div>
+            <div class="section-button">
+              <button class="save">SAVE CARD</button>
+              <button class="close">CLOSE CARD</button>
+            </div>
+          </div>
+        </section>
+        <section>
+            <div class="question-cards"></div>
+        </section>
+    </main>
+<script src="card.js"></script>
+  </body>
+</html>

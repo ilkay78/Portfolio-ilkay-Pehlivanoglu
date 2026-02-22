@@ -1,0 +1,339 @@
+
+.container{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+}
+ .formular-animation-container{
+  
+    margin-top: 100px;
+}
+
+
+ul {
+    counter-reset: myCounter;
+}
+
+li {
+    counter-increment: myCounter;
+}
+.input, .button{
+    width: 100%;
+    height: 80px;
+    font-size: 14px;
+    position: relative;
+   border: 0.1px solid #575cb5;
+}
+
+.button{
+    background: green;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.wrapper{
+    position: relative;
+    transform: skew(-14deg);
+   
+}
+
+.wrapper li, .button{ 
+    position: relative;
+    list-style: none;
+    width: 600px;
+    z-index: var(--i);
+    transition: 0.3s;
+    color: tomato;
+}
+
+ /* 
+ul {
+    counter-reset: myCounter;
+}
+
+li {
+    counter-increment: myCounter;
+}
+
+li::before {
+    content: counter(myCounter) ". ";
+    font-weight: bold;
+}
+*/
+.wrapper li::before{
+    position: absolute;
+    content: counter(myCounter) ". ";
+    font-weight: bold;
+    text-align: center;
+    background: #4a4b52;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 80px;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.3s;
+}
+.button::before{
+    position: absolute;
+    content: "9. ";
+    font-weight: bold;
+    text-align: center;
+    background: #4a4b52;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 80px;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.3s;
+}
+
+.wrapper li::after, .button::after{
+    position: absolute;
+    content:'';
+    font-weight: bold;
+    font-size:1.9rem;
+    letter-spacing: 12px;
+   text-align: center;
+    background: #67757e;
+    width: 600px;
+    height: 40px;
+    top: -40px;
+    left: 0;
+    
+transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.3s;
+}
+
+
+.wrapper li:nth-child(1)::after{
+    content:'Kontakt Formular';
+     background-color: #4f5551; }
+/* .wrapper li:nth-child(1):hover{ background-color: #ea07cb; } */
+/* .wrapper li:nth-child(2)::after{ background-color: #c2c5f7; }
+.wrapper li:nth-child(3)::after{ background-color: #989deb; }
+
+.wrapper li:nth-child(4)::after{ background-color: #989deb; }
+.wrapper li:nth-child(5)::after{ background-color: #989deb; } */
+/* .wrapper li:nth-child(6)::after{ background-color: #989deb; } */
+
+
+
+li .input{
+    
+    outline: none;
+    border: none;
+    color: whitesmoke;
+  font-size: 30px;
+}
+
+li .input::placeholder{
+    color: rgb(182, 173, 173);
+    text-align: center;
+    font-size: 20px;
+}
+
+
+li:nth-child(1) .input{ background:#444447; }
+li:nth-child(2) .input{ background:#55555a; }
+li:nth-child(3) .input{ background:#444447; }
+li:nth-child(4) .input{ background:#55555a }
+li:nth-child(5) .input{ background:#444447; }
+li:nth-child(6) .input{ background:#55555a; }
+li:nth-child(7) .input{ background:#55555a; }
+li:nth-child(8) .input{ background:#55555a; }
+
+
+
+li:nth-child(1) .input:focus{ border: 3px solid whitesmoke; }
+li:nth-child(2) .input:focus{ border: 3px solid whitesmoke; }
+li:nth-child(3) .input:focus{ border: 3px solid whitesmoke; }
+li:nth-child(4) .input:focus{ border: 3px solid whitesmoke; }
+li:nth-child(5) .input:focus{ border: 3px solid whitesmoke; }
+li:nth-child(6) .input:focus{ border: 3px solid whitesmoke; }
+li:nth-child(7) .input:focus{ border: 3px solid whitesmoke; }
+li:nth-child(8) .input:focus{ border: 3px solid whitesmoke; }
+
+.wrapper li:hover, .button:hover{
+    transform: translate(-75px);
+    transition: all 1s;
+}
+
+
+.button:hover,
+.button:hover::before,
+.button:hover::after{
+    background-color: #3f5c42;
+
+}
+
+.button:active{
+    transform: translateX(0);
+} 
+/* textarea{
+    color:black;
+} */
+.wrapper li textarea {
+    width: 100%;       /* volle Breite des li */
+    box-sizing: border-box;  /* inkl. padding & border */
+    font-size: 17px;   /* optional */
+}
+/* hier ist die Form-Card für smaller size! */
+
+.formular-container{
+
+   color: black;
+    padding: 20px;
+    width: 800px;
+    /* min-width: 600px;
+    max-width: 600px; */
+    background-color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0 0,0.15);
+}
+.formular-container .form-card{
+    width: 100%;
+}
+.formular-container table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.formular-container td{
+    padding: 8px;
+    width:70% ;
+}
+.formular-container input,
+.formular-container select,
+.formular-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.formular-container button {
+    padding: 10px 20px;
+    margin: 10px 5px 0 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #0078d7;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.formular-container button:hover {
+    background-color: #005fa3;
+}
+
+
+@media (max-width: 768px) { 
+    
+    .formular-container {
+        max-width: 100%;
+        margin-top: 50px;
+        padding: 15px;
+    }
+    .formular-container th,
+    .formular-container td {
+        display: block;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .formular-container {
+        max-width: 95%;
+        margin-top: 30px;
+        padding: 10px;
+        
+    }
+    .formular-container table {
+        display: block;
+    }
+    .formular-container th {
+        margin-top: 10px;
+    }
+}
+
+
+.error {
+    color:tomato;
+    font-size: 1.4rem;
+    display: block;
+    margin-top: 4px;
+    letter-spacing: 6px;
+  }
+
+
+  .confirm-container {
+    position: fixed;
+    left: 50%;
+    bottom: 0px;              
+    transform: translateX(-50%);
+    z-index: 9999;
+  }
+  
+  .confirm-container .card {
+    width: 420px;
+    text-align: center;
+    color: green;
+  }
+
+  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

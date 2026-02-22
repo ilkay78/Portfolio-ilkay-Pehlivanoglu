@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: maroon;
+}
+
+.container {
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.shoping-list {
+    width: 600px;
+    min-height: 100vh;
+    margin: auto;
+    background: white;
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.5);
+}
+
+.shoping-list h1 {
+    font-size: 2.5rem;
+    margin-top: 1em;
+}
+
+.shoping-list i {
+
+    font-size: 2rem;
+    color: tan;
+}
+
+.shoping-list input {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+    border: 0;
+    border-bottom: 3px solid black;
+    font-size: 1.5rem;
+}
+
+#allItems h2 {
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 2rem;
+
+}
+
+@media(max-width:480px){
+    .shoping-list h1{
+        font-size: 2rem;
+    }
+    .shoping-list i{
+        font-size: 1.5rem;
+    }
+    .shoping-list input{
+        font-size: 1rem;
+    }
+    #shoping-list h2{
+        margin-left: 25px;
+        font-size: 1.5rem;
+    }
+}

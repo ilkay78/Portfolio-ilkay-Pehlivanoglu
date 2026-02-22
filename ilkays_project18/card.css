@@ -1,0 +1,69 @@
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  border: 1px solid lightgray;
+  box-shadow: 2px 5px 8px 6px rgb(122, 122, 126);
+  width: 380px;
+  height: 250px;
+}
+.container-textarea {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  
+}
+textarea{
+    width:300px;
+    margin: 15px;
+    
+}
+.section-button{
+width: 100%;
+margin-top: 30px;
+display: flex;
+justify-content: space-between;
+box-shadow: 2px 5px 3px 2px rgb(122, 122, 126);
+}
+button{
+    background-color: rgb(132, 132, 240);
+    color: whitesmoke;
+}
+.question-cards{
+display: flex;
+justify-content:space-between;
+flex-wrap: wrap;
+margin-top: 60px;
+}
+.question-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  border: 1px solid lightgray;
+  box-shadow: 2px 5px 3px 2px rgb(122, 122, 126);
+  width: 380px;
+  height: 150px;
+ }
+.edix{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+}  
+.edix :hover{
+  background-color:rgba(0,0,0,0.5) ;
+  color: white;
+}
+

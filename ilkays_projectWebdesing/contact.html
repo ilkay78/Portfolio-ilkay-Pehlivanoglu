@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="/ilkays_projectWebdesing/Webdesign-css/contact.css"
+    />
+    <script src="Webdesign-js/navbar.js"></script>
+    <script src="Webdesign-js/contact.js"></script>
+    <script src="Webdesign-js/xmlxsl.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function() {
+       emailjs.init("DSquLovm6Qq8pXhq2"); 
+   })();
+   </script>
+
+
+  </head>
+  <body><div id="confirmContainer" class="confirm-container"></div>
+    <!-- navbar -->
+    <header id="site-header"></header>
+
+   <main>
+      <div class="container">
+       
+
+        <div class="formular-animation-container">
+          
+          <form class="contact-form form" id="contactForm">
+            <ul class="wrapper">
+              <li style="--i: 9">
+                <input
+                  type="text"
+                  name="name"
+                  class="input"
+                  placeholder="Name"
+                  
+                />
+                <span class="error"></span>
+              </li>
+              <li style="--i: 8">
+                <input
+                  type="text"
+                  name="surname"
+                  class="input"
+                  placeholder="Nachname"
+                  
+                />
+                <span class="error"></span>
+              </li>
+              <li style="--i: 7">
+                <input
+                  type="text"
+                  name="address"
+                  class="input"
+                  placeholder="Address"
+                  
+                />
+                <span class="error"></span>
+              </li>
+              <li style="--i: 6">
+                <input
+                  type="text"
+                  name="plz"
+                  class="input"
+                  placeholder="Postleitzahl"
+                  
+                />
+                <span class="error"></span>
+              </li>
+
+              <li style="--i: 5">
+                <input
+                  type="text"
+                  name="city"
+                  class="input"
+                  list="Bundesland"
+                  placeholder="Bundesland"
+                  
+                />
+                <span class="error"></span>
+                <datalist id="Bundesland">
+                    <option selected value="Wien"></option>
+                    <option value="Vorarlberg"></option>
+                    <option value="Tirol"></option>
+                    <option value="Steiermark"></option>
+                    <option value="Salzburg"></option>
+                    <option value="Oberösterreich"></option>
+                    <option value="Niederösterreich"></option>
+                   <option value="Kärnten"></option>
+                    <option value="Burgerland"></option>
+                  </datalist>
+              </li>
+
+              <li style="--i: 4">
+                <input
+                  type="tel"
+                  name="phone"
+                  class="input"
+                  placeholder="Telefonnummer"
+                  
+                />
+                <span class="error"></span>
+              </li>
+              <li style="--i: 3">
+                <input
+                  type="email"
+                  name="email"
+                  class="input"
+                  placeholder="E-Mail"
+                  
+                />
+                <span class="error"></span>
+              </li>
+              <li style="--i: 2">
+                <textarea
+                  name="comment"
+                  id="Kommentar"
+                  
+                  rows="3"
+                  placeholder="Ihr Kommentar"
+                ></textarea>
+               </li>
+
+              <button class="button" type="submit" style="--i: 1">
+                Absenden
+              </button>
+            </ul>
+          </form>
+        </div>
+<!-- 2.Form container -->
+        <div class="formular-container">
+            <form class="contact-form form-card" novalidate>
+                <fieldset>
+                  <legend>Kontakt Formular</legend>
+              
+                  <table>
+                    <tr>
+                      <th><label for="name2">Name:</label></th>
+                      <td>
+                        <input type="text" name="name" id="name2" placeholder="Vorname">
+                        <span class="error"></span>
+                      </td>
+                    </tr>
+              
+                    <tr>
+                      <th><label for="surname2">Nachname:</label></th>
+                      <td>
+                        <input type="text" name="surname" id="surname2" placeholder="Nachname">
+                        <span class="error"></span>
+                      </td>
+                    </tr>
+              
+                    <tr>
+                      <th><label for="address2">Straße & Hausnummer:</label></th>
+                      <td>
+                        <input type="text" name="address" id="address2" placeholder="Addresse">
+                        <span class="error"></span>
+                      </td>
+                    </tr>
+              
+                    <tr>
+                      <th><label for="plz2">Postleitzahl:</label></th>
+                      <td>
+                        <input type="text" name="plz" id="plz2" placeholder="PLZ">
+                        <span class="error"></span>
+                      </td>
+                    </tr>
+              
+                    <tr>
+                      <th><label for="city2">Bundesland:</label></th>
+                      <td>
+                        <input type="text" name="city" id="city2" list="BundeslandListe" placeholder="Bundesland">
+                        <datalist id="BundeslandListe">
+                          <option value="Wien">
+                          <option value="Vorarlberg">
+                          <option value="Tirol">
+                          <option value="Steiermark">
+                          <option value="Salzburg">
+                          <option value="Oberösterreich">
+                          <option value="Niederösterreich">
+                          <option value="Kärnten">
+                          <option value="Burgenland">
+                        </datalist>
+                        <span class="error"></span>
+                      </td>
+                    </tr>
+              
+                  
+                    <tr>
+                      <th>Geschlecht:</th>
+                      <td>
+                        <label>
+                          <input type="radio" name="geschlecht" value="Mann"> Mann
+                        </label>
+                        <label>
+                          <input type="radio" name="geschlecht" value="Frau"> Frau
+                        </label>
+                        <label>
+                          <input type="radio" name="geschlecht" value="Inter"> Inter
+                        </label>
+                        <span class="error"></span>
+                      </td>
+                    </tr>
+              
+                
+                    <tr>
+                      <th>Kontakt:</th>
+                      <td>
+                        <label>
+                          <input type="checkbox" name="kontakt[]" value="Mail"> Mail
+                        </label>
+                        <label>
+                          <input type="checkbox" name="kontakt[]" value="SMS"> SMS
+                        </label>
+                        <label>
+                          <input type="checkbox" name="kontakt[]" value="Telefon"> Telefon
+                        </label>
+                        <span class="error"></span>
+                      </td>
+                    </tr>
+              
+                    <tr>
+                      <th><label for="email2">E-Mail:</label></th>
+                      <td>
+                        <input type="email" name="email" id="email2">
+                        <span class="error"></span>
+                      </td>
+                    </tr>
+              
+                    <tr>
+                      <th><label for="phone2">Telefonnummer:</label></th>
+                      <td>
+                        <input type="tel" name="phone" id="phone2">
+                        <span class="error"></span>
+                      </td>
+                    </tr>
+              
+                    <tr>
+                      <th><label for="comment2">Kommentar:</label></th>
+                      <td>
+                        <textarea name="comment" id="comment2" rows="5"></textarea>
+                      </td>
+                    </tr>
+                  </table>
+                </fieldset>
+              
+                <button type="submit">Absenden</button>
+                <button type="reset">Zurücksetzen</button>
+              </form>
+              
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer text-center">
+      <div class="container">
+        <p>Copyright &copy; 2025. All rights reserved.</p>
+        <p>
+          Designed with <span class="text-danger">&hearts;</span> by ILKAY
+          PEHLIVANOGLU
+        </p>
+      </div>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="kontaktformular.xsl"?>
+
+<kontaktformular>
+  <name>ilkay</name>
+  <surname>Pehlivanoglu</surname>
+  <address>Weinberggasse 60</address>
+  <plz>1190</plz>
+  <city>Wien</city>
+  <phone>069910423567</phone>
+  <email>pehlivanogluilkay@gmail.com</email>
+  <comment>Success</comment>
+  <datum>2026-02-11</datum>
+</kontaktformular>
